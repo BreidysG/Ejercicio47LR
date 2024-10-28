@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fijación sobre Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FIJACIÓN SOBRE TEXTOS</h1>
+        <div id="info">
+            <p>Este ejercicio está formado por un texto presentado en dos columnas estilo periodístico y atravesados por líneas verticales. Debes centrar la mirada en las líneas verticales de cada columna mientras la deslizas hacia abajo como lo va indicando la placa visualizadora.</p>
+            <p>Las líneas verticales te indican las fijaciones que debes hacer para cada línea de texto.</p>
+            <p>Lo ideal es que disminuyas el número de fijaciones que realiza el ojo al leer y puedas percibir por cada línea de texto, y con un solo golpe de vista, tres o más palabras.</p>
+            <p>Este ejercicio te servirá para ampliar tu ángulo lector y así captar más palabras con una sola fijación.</p>
+            <p>Es bueno que trabajes comprensión lectora, por lo tanto intenta comprender sin realizar vocalización o subvocalización.</p>
+        </div>
+        <div id="controles" class="controls">
+            <label for="speed">Selecciona la velocidad (milisegundos por fijación):</label>
+            <input type="number" id="speed" value="300">
+            <button id="start-btn">Iniciar</button>
+        </div>
+        <div id="text-container" class="hidden">
+            <div id="column-left" class="column left-column hidden">
+                <p>En un rincón remoto, rodeado por un vasto bosque,</p>
+                <p>vivía un hombre humilde, conocido por su generosidad y su amor a la naturaleza,</p>
+                <p>que cuidaba un huerto donde crecía de todo, desde hierbas medicinales hasta flores silvestres.</p>
+                <p>Cada mañana, recolectaba frutos frescos y un poco de miel,</p>
+                <p>y al atardecer, se sentaba en su porche de madera a escuchar los sonidos del bosque,</p>
+                <p>con una taza de té hecho de las hierbas que él mismo cultivaba,</p>
+                <p>observando cómo el sol se ocultaba detrás de las montañas lejanas.</p>
+                <p>En su hogar, cada rincón tenía un toque de naturaleza,</p>
+                <p>y en los días de celebración, adornaba su mesa con flores recién cortadas,</p>
+                <p>vestía una camisa blanca de lino y sus viejas sandalias de cuero,</p>
+                <p>y en el resto de los días, vestía con ropa sencilla y práctica, lista para el trabajo en el campo.</p>
+                <p>Con él vivía un periquito verde, que solía imitar su silbido,</p>
+                <p>y un perro fiel que siempre lo acompañaba en sus recorridos por el bosque,</p>
+                <p>y a veces un amigo del pueblo cercano venía a visitarlo para compartir historias y consejos sobre la siembra.</p>
+            </div>
+            
+            <div id="column-right" class="column right-column hidden">
+                <p>El hombre rondaba los sesenta años, con una vida llena de experiencias a sus espaldas;</p>
+                <p>su piel era bronceada por el sol, con arrugas que reflejaban sabiduría y bondad;</p>
+                <p>disfrutaba de la calma de la mañana y de las caminatas bajo el cielo estrellado.</p>
+                <p>Algunos en el pueblo creían que había sido marinero en su juventud,</p>
+                <p>y otros aseguraban que conocía el secreto de cada planta en el bosque,</p>
+                <p>pero lo que todos sabían era su amor por la tierra y su espíritu de aventura.</p>
+                <p>Pasaba sus días enseñando a los jóvenes del pueblo sobre el cuidado de la naturaleza,</p>
+                <p>o compartiendo historias junto al fuego en las noches frescas,</p>
+                <p>narrando cuentos de tierras lejanas que había explorado en sus días de juventud,</p>
+                <p>y de cada historia, sacaba una enseñanza que quedaba en el corazón de quienes lo escuchaban.</p>
+                <p>Su hogar estaba lleno de objetos recolectados de sus viajes y de los regalos que la naturaleza le ofrecía,</p>
+                <p>y siempre encontraba tiempo para compartir una anécdota o un consejo con quien estuviera dispuesto a escucharlo.</p>
+            </div>
+            
+            
+            <!-- Dos líneas verticales en cada columna -->
+            <div id="line1" class="vertical-line left-line1 hidden"></div>
+            <div id="line2" class="vertical-line left-line2 hidden"></div>
+            <div id="line3" class="vertical-line right-line1 hidden" ></div>
+            <div id="line4" class="vertical-line right-line2 hidden"></div>
+        </div>
+        <div id="timer" class="hidden">Tiempo: 3:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

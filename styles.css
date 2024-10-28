@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; /* Fondo más claro y moderno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evitar desplazamiento */
+    background-image: url(2.png);
+    background-size: cover;
+}
+
+body p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px; /* Limitar el ancho máximo */
+    /*height: 90vh;  Asegura que todo el contenido esté visible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    padding: 20px;
+}
+
+#info {
+    background-color: #f8f9fa; /* Fondo claro para destacar el contenido */
+    border: 1px solid #ddd; /* Borde suave para separación */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#info p {
+    font-size: 17px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+#info p:last-child {
+    margin-bottom: 0; /* Elimina el margen del último párrafo */
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#text-container {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    position: relative;
+    gap: 20px; /* Espacio entre columnas */
+    padding: 10px;
+}
+
+#text-container p {
+    font-weight: bold;
+    margin: 0;
+    height: 30px; /* Ajusta la altura para que muestre solo la mitad superior */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    line-height: 3.2em; /* Alinea el texto correctamente */
+    white-space: nowrap;
+    
+}
+
+.column {
+    width: 50%;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+
+.vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color:#333;
+}
+
+.left-line1 {
+    left: 20%; /* Primera línea izquierda */
+}
+
+.left-line2 {
+    left: 30%; /* Segunda línea izquierda */
+}
+
+.right-line1 {
+    right: 32%; /* Primera línea derecha */
+}
+
+.right-line2 {
+    right: 22%; /* Segunda línea derecha */
+}
+
+.highlight {
+    background-color:#75b8ff; /* Color de resaltado */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+#timer {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
