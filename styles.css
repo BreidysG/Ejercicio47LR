@@ -164,3 +164,79 @@ button:hover {
         transform: translateY(100%);
     }
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    #info {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    #info p {
+        font-size: 15px;
+    }
+
+    input[type="number"] {
+        padding: 6px;
+        font-size: 14px;
+        margin-bottom: 10px; /* Espacio adicional entre el campo y el botón */
+        width: 100%; /* Hacer el campo de entrada más ancho en pantallas pequeñas */
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #text-container {
+        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        align-items: center; /* Centrar columnas */
+    }
+
+    .column {
+        flex: 1 1 100%; /* Las columnas ocuparán el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 15px; /* Espacio entre las columnas */
+        max-width: 100%; /* Asegurarse de que no excedan el 100% */
+    }
+
+    #timer {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    #info {
+        padding: 8px;
+    }
+
+    #info p {
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #timer {
+        font-size: 18px;
+    }
+
+    .column {
+        flex: 1 1 100%; /* Ajustar el ancho de las columnas para ser el 100% en pantallas más pequeñas */
+        margin-bottom: 20px; /* Espacio entre las columnas */
+    }
+}
